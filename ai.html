@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Theresa Coleman — AI Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Theresa Coleman" />
+    <meta
+      name="description"
+      content="An AI-generated blurb and layout demonstrating a third page."
+    />
+    <link rel="icon" href="./src/img/favicon.png" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">TC</a>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="ai.html">AI Page</a></li>
+        </ul>
+        <button class="btn" id="open-cmdk" aria-label="Open quick navigation">
+          Navigation
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>AI-Generated Inspiration</h1>
+      <p>
+        This page demonstrates a third, AI-generated page. Replace this text with content
+        you generated using GenAI and summarize your prompts in the README.
+      </p>
+      <blockquote class="quote">
+        “Build for humans first. Keep it fast, accessible, and delightful.”
+      </blockquote>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Theresa Coleman</p>
+      </div>
+    </footer>
+
+    <div class="cmdk-backdrop" hidden></div>
+    <div class="cmdk" role="dialog" aria-modal="true" hidden>
+      <div class="cmdk-header">
+        <input
+          id="cmdk-input"
+          class="cmdk-input"
+          type="search"
+          placeholder="Type to navigate…"
+          aria-label="Quick navigation"
+        />
+      </div>
+      <ul id="cmdk-list" class="cmdk-list" role="listbox" aria-label="Matches"></ul>
+    </div>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

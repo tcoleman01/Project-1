@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage built with vanilla HTML5, CSS3, and ES6 modules.",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "check:w3c": "echo \"Use https://validator.w3.org/nu/ for HTML validation\"",
+    "start": "npx serve -l 5173 ."
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3"
+  }
+}

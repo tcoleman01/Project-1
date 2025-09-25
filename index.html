@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Theresa Coleman — Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Theresa Coleman" />
+    <meta
+      name="description"
+      content="The personal homepage of Theresa Coleman: projects, skills, and contact."
+    />
+    <link rel="icon" href="./src/img/favicon.png" />
+    <meta property="og:title" content="Theresa Coleman — Homepage" />
+    <meta property="og:description" content="Projects, skills, and contact." />
+    <meta property="og:type" content="website" />
+    <link rel="preload" href="./src/img/avatar.jpg" as="image" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">TC</a>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="ai.html">AI Page</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn" id="open-cmdk" aria-label="Open quick navigation">
+          Navigation
+        </button>
+      </nav>
+    </header>
+
+    <main id="main" class="container">
+      <section class="hero">
+        <img
+          class="avatar"
+          src="./src/img/avatar.jpg"
+          width="128"
+          height="128"
+          alt="Portrait of Theresa Coleman"
+        />
+        <h1>Hi, I’m Theresa Coleman.</h1>
+        <p class="lead">
+          I design and build clean, accessible web experiences using HTML, CSS, and JS.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Get in touch</a>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <article>
+          <h2>About</h2>
+          <p>
+            Brief intro about you. Mention your focus, tools, and what problems you like to
+            solve.
+          </p>
+        </article>
+        <article>
+          <h2>Skills</h2>
+          <ul class="tags">
+            <li class="tag">HTML5</li>
+            <li class="tag">CSS3</li>
+            <li class="tag">ES6+</li>
+            <li class="tag">Accessibility</li>
+            <li class="tag">Git</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="featured-projects">
+        <h2 id="featured-projects">Featured Projects</h2>
+        <div class="card-grid">
+          <a class="card" href="projects.html#project-1">
+            <img
+              src="./src/img/avatar.jpg"
+              alt="Thumbnail for Project One"
+              width="640"
+              height="360"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p>A short description goes here.</p>
+            </div>
+          </a>
+          <a class="card" href="projects.html#project-2">
+            <img
+              src="./src/img/avatar.jpg"
+              alt="Thumbnail for Project Two"
+              width="640"
+              height="360"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p>Another short description.</p>
+            </div>
+          </a>
+          <a class="card" href="projects.html#project-3">
+            <img
+              src="./src/img/avatar.jpg"
+              alt="Thumbnail for Project Three"
+              width="640"
+              height="360"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p>What makes it interesting.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:coleman.t@northeastern.edu" class="contact-link"
+            >coleman.t@northeastern.edu</a
+          >
+        </p>
+      </section>
+    </main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>
+      © <span id="year"></span> Theresa Coleman •
+      <a
+        href="https://github.com/tcoleman01/Project-1"
+        target="_blank"
+        rel="noopener"
+        >GitHub</a
+      >
+    </p>
+  </div>
+</footer>
+
+    <div class="cmdk-backdrop" hidden></div>
+    <div class="cmdk" role="dialog" aria-modal="true" hidden>
+      <div class="cmdk-header">
+        <input
+          id="cmdk-input"
+          class="cmdk-input"
+          type="search"
+          placeholder="Type to navigate…"
+          aria-label="Quick navigation"
+        />
+      </div>
+      <ul id="cmdk-list" class="cmdk-list" role="listbox" aria-label="Matches"></ul>
+    </div>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

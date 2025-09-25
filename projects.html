@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Theresa Coleman — Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Theresa Coleman" />
+    <meta name="description" content="Project portfolio by Your Name." />
+    <link rel="icon" href="./src/img/favicon.png" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">TC</a>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="ai.html">AI Page</a></li>
+        </ul>
+        <button class="btn" id="open-cmdk" aria-label="Open quick navigation">
+          Navigation
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Projects</h1>
+      <p>Selected work showcasing layouts, interactivity, and accessibility.</p>
+
+      <section id="project-1">
+        <h2>Project One</h2>
+        <p>Details about the project, your role, and outcomes.</p>
+      </section>
+
+      <section id="project-2">
+        <h2>Project Two</h2>
+        <p>What problems it solves and what you learned.</p>
+      </section>
+
+      <section id="project-3">
+        <h2>Project Three</h2>
+        <p>Highlights and links to code or demo.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Theresa Coleman</p>
+      </div>
+    </footer>
+
+    <div class="cmdk-backdrop" hidden></div>
+    <div class="cmdk" role="dialog" aria-modal="true" hidden>
+      <div class="cmdk-header">
+        <input
+          id="cmdk-input"
+          class="cmdk-input"
+          type="search"
+          placeholder="Type to navigate…"
+          aria-label="Quick navigation"
+        />
+      </div>
+      <ul id="cmdk-list" class="cmdk-list" role="listbox" aria-label="Matches"></ul>
+    </div>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
